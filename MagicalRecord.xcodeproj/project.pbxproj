@@ -2311,7 +2311,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = "-DDEBUG";
+				OTHER_CFLAGS = (
+					"-DMR_LOGGING_ENABLED=1",
+					"-DDEBUG",
+				);
 			};
 			name = Debug;
 		};
@@ -2344,7 +2347,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				OTHER_CFLAGS = "-DNEBUG";
+				OTHER_CFLAGS = (
+					"-DMR_LOGGING_ENABLED=1",
+					"-DNEBUG",
+				);
 			};
 			name = Release;
 		};
